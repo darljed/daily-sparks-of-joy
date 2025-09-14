@@ -35,7 +35,7 @@ function ContentCard({ content }) {
                         subtitle={content?.bible_verse || "No verse available."} />
                     }
                     {
-                        <CardItem title='Explanation'
+                        <CardItem title='Insight'
                         content={content?.explanation || "No explanation available."} />
                     }
                     {
