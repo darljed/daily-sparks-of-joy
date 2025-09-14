@@ -46,17 +46,20 @@ function SparksPage({ params }) {
                 <ArrowLeftCircle /> Back to home
             </Button>
         </Link>
-        <div className="text-center mt-20">
-            {
-                isLoading && <div className="flex flex-row gap-3 justify-center items-center"> <Loader2Icon className="animate-spin" /> Loading...</div>
-            }
-            {
-                error && <div className="text-red-500">Error: {error.message}</div>
-            }
-            {
-                (!error && !isLoading && !content) && <div>No content available.</div>
-            }
-        </div>
+        {
+            !content && 
+            <div className="text-center mt-20">
+                {
+                    isLoading && <div className="flex flex-row gap-3 justify-center items-center"> <Loader2Icon className="animate-spin" /> Loading...</div>
+                }
+                {
+                    error && <div className="text-red-500">Error: {error.message}</div>
+                }
+                {
+                    (!error && !isLoading && !content) && <div>No content available.</div>
+                }
+            </div>
+        }
         {
             content && <div>
                 <div className="max-w-2xl m-auto p-2">
