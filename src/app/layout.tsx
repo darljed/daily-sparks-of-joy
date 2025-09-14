@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://dailysparks.darl.dev'),
+  metadataBase: new URL('https://dailyspark.darl.dev'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Daily Sparks of Joy",
     description: "Get daily motivational messages with Bible verses, spiritual insights, and prayers. Find encouragement and inspiration through faith-based content.",
-    url: 'https://dailysparks.darl.dev',
+    url: 'https://dailyspark.darl.dev',
     siteName: 'Daily Sparks of Joy',
     images: [
       {
