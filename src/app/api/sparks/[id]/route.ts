@@ -1,8 +1,7 @@
 import { createClient } from "@/lib/supabaseClient";
 import { NextResponse } from "next/server";
-export async function GET(request, { params }) {
+export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
-
     // get spark from supabase where id = id
 
     const supabase = createClient();

@@ -19,7 +19,7 @@ function ContentCard({ content }) {
     });
     
     return (
-        <div className="w-screen mt-2 p-5">
+        <div className="w-full mt-2 p-5">
             <Card  className="w-full">
                 <CardHeader>
                     <CardTitle>✨ {content?.title || "Daily Motivation"}</CardTitle>

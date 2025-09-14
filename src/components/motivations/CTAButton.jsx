@@ -15,8 +15,8 @@ function CTAButton() {
                 console.log(data);
                 if(data?.id){
                     window.location.href = `/sparks/${data.id}`;
+                    setIsLoading(false);
                 }
-                setIsLoading(false);
             })
         }
         catch(error){

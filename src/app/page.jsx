@@ -1,7 +1,6 @@
 "use client";
 import HeaderTitle from "../components/HeaderTitle";
 import CTAButton from "../components/motivations/CTAButton";
-import ThemeToggle from "../components/ThemeToggle";
 
 function Home() {
 

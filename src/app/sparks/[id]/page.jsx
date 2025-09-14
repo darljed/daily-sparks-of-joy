@@ -46,7 +46,7 @@ function SparksPage({ params }) {
                 <ArrowLeftCircle /> Back to home
             </Button>
         </Link>
-        <div className="text-center">
+        <div className="text-center mt-20">
             {
                 isLoading && <div className="flex flex-row gap-3 justify-center items-center"> <Loader2Icon className="animate-spin" /> Loading...</div>
             }
@@ -58,8 +58,11 @@ function SparksPage({ params }) {
             }
         </div>
         {
-            content && <div className="p-2 m-auto">
-                <ContentCard content={content}/>
+            content && <div>
+                <div className="max-w-2xl m-auto p-2">
+                    <ContentCard content={content}/>
+                </div>
+                
             </div>
         }
         </>
